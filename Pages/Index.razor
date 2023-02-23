@@ -1,0 +1,19 @@
+﻿@page "/"
+
+
+<label>First name:</label>
+<InputText @bind-Value="objCustomer.FirstName" />
+<label>Last name:</label>
+<InputText @bind-Value="objCustomer.LastName" />
+
+
+@code{
+    public class Customer
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+
+    private Customer objCustomer = new Customer();
+
+}
