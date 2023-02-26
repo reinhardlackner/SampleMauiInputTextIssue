@@ -4,11 +4,11 @@
              xmlns:local="clr-namespace:MauiApp10"
              x:Class="MauiApp10.MainPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
-
-    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+    <local:CustomBlazorWebview x:Name="blazorWebView" HostPage="wwwroot/index.html">
         <BlazorWebView.RootComponents>
             <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
         </BlazorWebView.RootComponents>
-    </BlazorWebView>
+        
+    </local:CustomBlazorWebview>
 
 </ContentPage>
